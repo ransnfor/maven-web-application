@@ -34,8 +34,8 @@ pipeline{
       stage('predeployment'){
       steps{
         sh "echo creating docker image"
-        sh "docker build -t ransnfor/maven-web-app . "
-        sh "docker push ransnfor/maven-web-app"
+        sh "docker build -t ransnfor/maven-web-application . "
+        sh "docker push ransnfor/maven-web-application"
       }
     }
     stage('UnDeploy'){
