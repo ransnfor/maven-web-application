@@ -36,7 +36,7 @@ pipeline{
         sh "echo creating docker image"
         sh "docker build -t ransnfor/maven-web-application . "
         sh "docker login -u ransnfor -p xxxxx"
-        sh "docker push ransnforransnfor/maven-web-application"
+        sh "docker push ransnfor/maven-web-application"
       }
     }
     stage('UnDeploy'){
